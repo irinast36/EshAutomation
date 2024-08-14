@@ -21,7 +21,6 @@ namespace EshProject
 
         public BaseEsh()
         {
-            new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
             driver = new ChromeDriver();
             driver.Manage().Window.FullScreen();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
